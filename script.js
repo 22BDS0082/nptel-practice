@@ -182,22 +182,7 @@ nextButton.addEventListener("click", () => {
     }
 });
 
-// Function to load the home page content
-function loadHomePage() {
-    document.getElementById('content').innerHTML = `
-        <h1>NPTEL practice quiz</h1>
-        <div class="quiz">
-            <h2 id="question">question</h2>
-            <div id="answer-buttons">
-                <button class="btn">ans 1</button>
-                <button class="btn">ans 2</button>
-                <button class="btn">ans 3</button>
-                <button class="btn">ans 4</button>
-            </div>
-            <button id="next-btn">next question</button>
-        </div>
-    `;
-}
+startQuiz();
 
 // Function to load the contact page content
 function loadContactPage() {
