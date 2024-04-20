@@ -1,0 +1,68 @@
+body
+{
+    background: black
+}
+.app
+{
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.app h1
+{
+    font-size: 20px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+
+}
+
+.quiz
+{
+   
+}
+
+.quiz h2
+{
+    margin-top: 10px;
+    font-size: 18px;
+    
+}
+
+.btn
+{
+    background: white;
+    color: black;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover
+{
+     background-color: black;
+     color: white;
+}
+
+#next-btn
+{
+    background-color: #222;
+    color: white;
+    font-weight: 500;
+    width: 150px;
+    padding: 10px;
+    border: 0;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
