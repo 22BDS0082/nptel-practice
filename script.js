@@ -174,3 +174,63 @@ nextButton.addEventListener("click", () => {
     }
 });
 startQuiz();
+
+
+function loadHomePage() {
+    document.getElementById('content').innerHTML = `
+        <h1>NPTEL practice quiz</h1>
+        <div class="quiz">
+            <h2 id="question">question</h2>
+            <div id="answer-buttons">
+                <button class="btn">ans 1</button>
+                <button class="btn">ans 2</button>
+                <button class="btn">ans 3</button>
+                <button class="btn">ans 4</button>
+            </div>
+            <button id="next-btn">next question</button>
+        </div>
+    `;
+}
+
+function loadContactPage() {
+    document.getElementById('content').innerHTML = `
+        <section class="contact" id="contact">
+            <div class="contact-content">
+                <div class="social-media">
+                    <p><b>Feel free to reach out with any questions, feedback, or collaboration ideas!</b></p>
+                    <h3 class="contact-heading">Email:</h3>
+                    <p>ojaskittur@gmail.com</p>
+                    <h3 class="contact-heading">Phone:</h3>
+                    <p>+91 7395820796</p>
+                    <h3 class="contact-heading">Address:</h3>
+                    <p>No-306, Rajeshwari Towers <br>VIT university,Vellore-632014 <br>Tamil Nadu, India</p>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm"
+                        action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfKZCpYYeslfHpc7UGrvzJr_c2VsKd1ZY8_l15JgxRSZaEzdQ/formResponse"
+                        method="POST">
+                        <input type="text" id="name" placeholder="Your Name" name="entry.430170869" required>
+                        <input type="email" id="email" placeholder="Your Email" name="entry.26687782" required>
+                        <input type="text" id="subject" placeholder="Subject" name="entry.476277779" required>
+                        <textarea id="message" placeholder="Your Message" name="entry.1931836219" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                    <div id="formMessage"></div>
+                </div>
+            </div>
+        </section>
+    `;
+}
+function loadAboutPage() {
+    document.getElementById('content').innerHTML = `
+    <section class="about" id="about">
+    <div class="about-content">
+        <h2>About Us</h2>
+        <p>Hey there! Welcome to NPTEL Practice, your friendly study buddy for NPTEL exams!</p>
+        <p>We're a bunch of passionate educators and learners just like you, on a mission to make your NPTEL prep journey as smooth as possible.</p>
+        <p>Here at NPTEL Practice, we know that studying for exams can be daunting, so we've crafted a cozy corner of the internet filled with study materials, practice quizzes, and all the support you need to crush those NPTEL exams!</p>
+        <p>Think of us as your study pals who've got your back every step of the way. Together, let's tackle those tough topics, overcome challenges, and celebrate your successes!</p>
+    </div>
+</section>
+    `;
+}

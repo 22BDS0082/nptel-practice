@@ -1,39 +1,60 @@
-body
-{
-    background: black
+body {
+    background: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
-.app
-{
+
+.navbar {
+    background: #222;
+    padding: 20px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar li a:hover {
+    color: #ff7f0e;
+}
+
+.app {
     background: white;
     width: 90%;
     max-width: 600px;
-    margin: 100px auto 0;
+    margin: 20px auto 0;
     border-radius: 10px;
     padding: 30px;
 }
 
-.app h1
-{
+.app h1 {
     font-size: 20px;
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
-
 }
 
-.quiz
-{
-   
-}
+.quiz {}
 
-.quiz h2
-{
+.quiz h2 {
     margin-top: 10px;
     font-size: 18px;
-    
 }
 
-.btn
-{
+.btn {
     background: white;
     color: black;
     font-weight: 500;
@@ -47,17 +68,16 @@ body
     transition: all 0.3s;
 }
 
-.btn:hover:not([disabled])
-{
-     background-color: black;
-     color: white;
+.btn:hover:not([disabled]) {
+    background-color: black;
+    color: white;
 }
-.btn:disabled
-{
+
+.btn:disabled {
     cursor: no-drop;
 }
-#next-btn
-{
+
+#next-btn {
     background-color: #222;
     color: white;
     font-weight: 500;
@@ -70,10 +90,79 @@ body
     display: none;
 }
 
-.incorrect{
+.incorrect {
     background: red;
 }
 
-.correct{
+.correct {
     background: green;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 9%;
+    background-color: black; 
+    color: white; 
+}
+
+.contact h2 {
+    color: white; 
+    font-size: 2.5rem;
+    margin-top: 0;
+   
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 95%;
+    
+}
+
+.contact-form,
+.social-media {
+    width: 48%;
+}
+
+.contact-form {
+    margin-left: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    color: black; 
+    text-transform: none;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    background-color: grey;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: white;
+    color: grey;
+}
+
+.contact-heading {
+    font-size: large;
+    color: white; 
+    margin-bottom: 0.5rem;
 }

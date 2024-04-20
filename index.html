@@ -7,8 +7,15 @@
     <title>NPTEL practice</title>
 </head>
 <body>
-    <div class="app">
-        <h1>NPTEL practie quiz</h1>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="#" onclick="loadContactPage()">Contact</a></li>
+            <li><a href="#" onclick="loadAboutPage()">About</a></li>
+        </ul>
+    </nav>
+    <div class="app" id="content">
+        <h1>NPTEL practice quiz</h1>
         <div class="quiz">
             <h2 id="question">question</h2>
             <div id="answer-buttons">
@@ -21,5 +28,6 @@
         </div>
     </div>
     <script src="script.js"></script>
+
 </body>
 </html>
