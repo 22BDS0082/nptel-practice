@@ -195,8 +195,10 @@ function loadHomePage() {
 function loadContactPage() {
     document.getElementById('content').innerHTML = `
         <section class="contact" id="contact">
+        <h2>Contact</h2>
             <div class="contact-content">
                 <div class="social-media">
+                    
                     <p><b>Feel free to reach out with any questions, feedback, or collaboration ideas!</b></p>
                     <h3 class="contact-heading">Email:</h3>
                     <p>ojaskittur@gmail.com</p>
@@ -227,10 +229,12 @@ function loadAboutPage() {
     <div class="about-content">
         <h2>About Us</h2>
         <p>Hey there! Welcome to NPTEL Practice, your friendly study buddy for NPTEL exams!</p>
-        <p>We're a bunch of passionate educators and learners just like you, on a mission to make your NPTEL prep journey as smooth as possible.</p>
-        <p>Here at NPTEL Practice, we know that studying for exams can be daunting, so we've crafted a cozy corner of the internet filled with study materials, practice quizzes, and all the support you need to crush those NPTEL exams!</p>
-        <p>Think of us as your study pals who've got your back every step of the way. Together, let's tackle those tough topics, overcome challenges, and celebrate your successes!</p>
+        <p>I am a passionate learner just like you, on a mission to make your NPTEL prep journey as smooth as possible.</p>
+        <p>Here at NPTEL Practice, I know that studying for exams can be daunting, so we've crafted a cozy corner of the internet filled with practice quizzes and all the support you need to crush those NPTEL exams!</p>
+        <p>Think of this website as your study pal who has got your back every step of the way. Together, let's tackle those tough topics, overcome challenges, and celebrate your successes!</p>
+        <p>I will be adding more courses and quizzes soon :)</p>
     </div>
 </section>
+
     `;
 }
