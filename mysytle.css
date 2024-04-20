@@ -1,211 +1,215 @@
+/* General styles */
 body {
-    background: black;
-    margin: 0;
-    font-family: Arial, sans-serif;
+    background: black; /* Set background color */
+    margin: 0; /* Remove default margins */
+    font-family: Arial, sans-serif; /* Specify font family */
 }
 
+/* Navbar styles */
 .navbar {
-    background: white;
-    padding: 20px 0;
+    background: white; /* Set background color */
+    padding: 20px 0; /* Set top and bottom padding */
 }
 
 .navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    list-style-type: none; /* Remove default list styles */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Align list items to the center */
 }
 
 .navbar li {
-    display: inline;
-    margin:100px;
+    display: inline; /* Display list items inline */
+    margin:100px; /* Add space between list items */
 }
 
 .navbar li a {
-    color: black;
-    text-decoration: none;
-    font-weight: 700;
-    transition: color 0.3s;
+    color: black; /* Set link color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: 700; /* Set font weight */
+    transition: color 0.3s; /* Add transition effect for color change */
 }
 
 .navbar li a:hover {
-    color: #ff7f0e;
+    color: #ff7f0e; /* Change link color on hover */
 }
 
+/* Main application container */
 .app {
-    background: white;
-    width: 90%;
-    max-width: 600px;
-    margin: 20px auto 0;
-    border-radius: 10px;
-    padding: 30px;
+    background: white; /* Set background color */
+    width: 90%; /* Set width */
+    max-width: 600px; /* Set maximum width */
+    margin: 20px auto 0; /* Center the container horizontally */
+    border-radius: 10px; /* Add border radius */
+    padding: 30px; /* Add padding */
 }
 
 .app h1 {
-    font-size: 20px;
-    border-bottom: 1px solid #333;
-    padding-bottom: 30px;
+    font-size: 20px; /* Set font size */
+    border-bottom: 1px solid #333; /* Add bottom border */
+    padding-bottom: 30px; /* Add bottom padding */
 }
 
+/* Quiz section */
 .quiz {}
 
 .quiz h2 {
-    margin-top: 10px;
-    font-size: 18px;
+    margin-top: 10px; /* Set top margin */
+    font-size: 18px; /* Set font size */
 }
 
+/* Button styles */
 .btn {
-    background: white;
-    color: black;
-    font-weight: 500;
-    width: 100%;
-    border: 1px solid #222;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: left;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s;
+    background: white; /* Set background color */
+    color: black; /* Set text color */
+    font-weight: 500; /* Set font weight */
+    width: 100%; /* Set width */
+    border: 1px solid #222; /* Add border */
+    padding: 10px; /* Add padding */
+    margin: 10px 0; /* Add margin */
+    text-align: left; /* Align text to the left */
+    border-radius: 4px; /* Add border radius */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: all 0.3s; /* Add transition effect */
 }
 
 .btn:hover:not([disabled]) {
-    background-color: black;
-    color: white;
+    background-color: black; /* Change background color on hover */
+    color: white; /* Change text color on hover */
 }
 
 .btn:disabled {
-    cursor: no-drop;
+    cursor: no-drop; /* Disable pointer cursor */
 }
 
 #next-btn {
-    background-color: #222;
-    color: white;
-    font-weight: 500;
-    width: 150px;
-    padding: 10px;
-    border: 0;
-    margin: 20px auto 0;
-    border-radius: 4px;
-    cursor: pointer;
-    display: none;
+    background-color: #222; /* Set background color */
+    color: white; /* Set text color */
+    font-weight: 500; /* Set font weight */
+    width: 150px; /* Set width */
+    padding: 10px; /* Add padding */
+    border: 0; /* Remove border */
+    margin: 20px auto 0; /* Add margin */
+    border-radius: 4px; /* Add border radius */
+    cursor: pointer; /* Change cursor to pointer */
+    display: none; /* Hide by default */
 }
 
+/* Styles for correct and incorrect answers */
 .incorrect {
-    background: red;
+    background: red; /* Set background color */
 }
 
 .correct {
-    background: green;
+    background: green; /* Set background color */
 }
+
+/* Contact section */
 .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 5rem 9%;
-    background-color: black; 
-    color: white; 
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Arrange content in column */
+    padding: 5rem 9%; /* Add padding */
+    background-color: black; /* Set background color */
+    color: white; /* Set text color */
 }
 
-
+/* About section */
 .about {
-    background-color: black;
-    color: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: black; /* Set background color */
+    color: white; /* Set text color */
+    padding: 40px; /* Add padding */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
 .about-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+    max-width: 800px; /* Set maximum width */
+    margin: 0 auto; /* Center content horizontally */
+    text-align: center; /* Center text */
 }
 
 .about h2 {
-    font-size: 2.5rem;
-    color: white;
-    margin-bottom: 20px;
+    font-size: 2.5rem; /* Set font size */
+    color: white; /* Set text color */
+    margin-bottom: 20px; /* Add bottom margin */
 }
 
 .about p {
-    font-size: 1.2rem;
-    color: white;
-    line-height: 1.6;
-    margin-bottom: 20px;
+    font-size: 1.2rem; /* Set font size */
+    color: white; /* Set text color */
+    line-height: 1.6; /* Set line height */
+    margin-bottom: 20px; /* Add bottom margin */
 }
 
 /* Style links in the about section */
 .about a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s;
+    color: #007bff; /* Set link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Add transition effect */
 }
 
 .about a:hover {
-    color: #0056b3;
-    text-decoration: underline;
+    color: #0056b3; /* Change link color on hover */
+    text-decoration: underline; /* Add underline on hover */
 }
 
-
-
-
+/* Contact section styles */
 .contact h2 {
-    color: white; 
-    font-size: 2.5rem;
-    margin-top: 0;
-   
+    color: white; /* Set text color */
+    font-size: 2.5rem; /* Set font size */
+    margin-top: 0; /* Remove top margin */
 }
 
 .contact-content {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    max-width: 95%;
-    
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: flex-start; /* Align items to the start */
+    width: 100%; /* Set width */
+    max-width: 95%; /* Set maximum width */
 }
 
 .contact-form,
 .social-media {
-    width: 48%;
+    width: 48%; /* Set width */
 }
 
 .contact-form {
-    margin-left: 2rem;
+    margin-left: 2rem; /* Add left margin */
 }
 
 .contact-form input,
 .contact-form textarea,
 .contact-form button {
-    width: 100%;
-    margin-bottom: 1.5rem;
-    padding: 0.8rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: #f8f8f8;
-    color: black; 
-    text-transform: none;
+    width: 100%; /* Set width */
+    margin-bottom: 1.5rem; /* Add bottom margin */
+    padding: 0.8rem; /* Add padding */
+    border-radius: 5px; /* Add border radius */
+    border: 1px solid #ccc; /* Add border */
+    background-color: #f8f8f8; /* Set background color */
+    color: black; /* Set text color */
+    text-transform: none; /* Reset text transform */
 }
 
 .contact-form textarea {
-    height: 150px;
+    height: 150px; /* Set height */
 }
 
 .contact-form button {
-    background-color: grey;
-    color: white;
-    border: none;
-    cursor: pointer;
+    background-color: grey; /* Set background color */
+    color: white; /* Set text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer */
 }
 
 .contact-form button:hover {
-    background-color: white;
-    color: grey;
+    background-color: white; /* Change background color on hover */
+    color: grey; /* Change text color on hover */
 }
 
 .contact-heading {
-    font-size: large;
-    color: white; 
-    margin-bottom: 0.5rem;
+    font-size: large; /* Set font size */
+    color: white; /* Set text color */
+    margin-bottom: 0.5rem; /* Add bottom margin */
 }

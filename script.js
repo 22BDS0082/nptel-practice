@@ -1,3 +1,4 @@
+//Arrray containing questions and answers
 const questions = [
     {
         question: "tropical moist forests do not include",
@@ -98,6 +99,7 @@ const nextButton = document.getElementById("next-btn");
 let currentQuestionIndex = 0;
 let score = 0;
 
+// Function to start the quiz
 function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
@@ -105,6 +107,7 @@ function startQuiz() {
     showQuestion();
 }
 
+// Function to display the current question
 function showQuestion() {
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
@@ -120,16 +123,18 @@ function showQuestion() {
             button.dataset.correct = answer.correct;
         }
         button.addEventListener("click", selectAnswer);
-    }
-    );
+    });
 }
 
+// Function to reset the answer buttons and hide the next button
 function resetState() {
     nextButton.style.display = "none";
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
 }
+
+// Function to handle the selection of an answer
 function selectAnswer(e) {
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
@@ -150,13 +155,15 @@ function selectAnswer(e) {
     nextButton.style.display = "block";
 }
 
-function showScore(){
+// Function to show the final score
+function showScore() {
     resetState();
-    questionElement.innerHTML= `you scored ${score} out of ${questions.length}!`;
-    nextButton.innerHTML="try again";
-    nextButton.style.display="block";
+    questionElement.innerHTML = `you scored ${score} out of ${questions.length}!`;
+    nextButton.innerHTML = "Try again";
+    nextButton.style.display = "block";
 }
 
+// Function to handle the next button click
 function handleNextButton() {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
@@ -166,6 +173,7 @@ function handleNextButton() {
     }
 }
 
+// Event listener for the next button
 nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < questions.length) {
         handleNextButton();
@@ -173,9 +181,8 @@ nextButton.addEventListener("click", () => {
         startQuiz();
     }
 });
-startQuiz();
 
-
+// Function to load the home page content
 function loadHomePage() {
     document.getElementById('content').innerHTML = `
         <h1>NPTEL practice quiz</h1>
@@ -192,6 +199,7 @@ function loadHomePage() {
     `;
 }
 
+// Function to load the contact page content
 function loadContactPage() {
     document.getElementById('content').innerHTML = `
         <section class="contact" id="contact">
@@ -223,6 +231,8 @@ function loadContactPage() {
         </section>
     `;
 }
+
+// Function to load the about page content
 function loadAboutPage() {
     document.getElementById('content').innerHTML = `
     <section class="about" id="about">

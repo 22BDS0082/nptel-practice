@@ -1,33 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Document type declaration -->
+<html lang="en"> <!-- Root element, language set to English -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mysytle.css">
-    <title>NPTEL practice</title>
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive viewport settings -->
+    <link rel="stylesheet" href="mysytle.css"> <!-- Linking external stylesheet -->
+    <title>NPTEL practice</title> <!-- Document title -->
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar"> <!-- Navigation bar -->
         <ul>
-            <li><a href="index.html" >Home</a></li>
-            <li><a href="#" onclick="loadAboutPage()">About</a></li>
-            <li><a href="#" onclick="loadContactPage()">Contact</a></li>
+            <li><a href="index.html" >Home</a></li> <!-- Home link -->
+            <li><a href="#" onclick="loadAboutPage()">About</a></li> <!-- About link with onclick function -->
+            <li><a href="#" onclick="loadContactPage()">Contact</a></li> <!-- Contact link with onclick function -->
         </ul>
     </nav>
-    <div class="app" id="content">
-        <h1>NPTEL forest and their management practice quiz</h1>
-        <div class="quiz">
-            <h2 id="question">question</h2>
-            <div id="answer-buttons">
-                <button class="btn">ans 1</button>
-                <button class="btn">ans 2</button>
-                <button class="btn">ans 3</button>
-                <button class="btn">ans 4</button>
+    <div class="app" id="content"> <!-- Main content area -->
+        <h1>NPTEL forest and their management practice quiz</h1> <!-- Heading -->
+        <div class="quiz"> <!-- Quiz container -->
+            <h2 id="question">question</h2> <!-- Question heading -->
+            <div id="answer-buttons"> <!-- Container for answer buttons -->
+                <button class="btn">ans 1</button> <!-- Answer option 1 -->
+                <button class="btn">ans 2</button> <!-- Answer option 2 -->
+                <button class="btn">ans 3</button> <!-- Answer option 3 -->
+                <button class="btn">ans 4</button> <!-- Answer option 4 -->
             </div>
-            <button id="next-btn">next question</button>
+            <button id="next-btn">next question</button> <!-- Button to proceed to the next question -->
         </div>
     </div>
-    <script src="script.js"></script>
-
+    <script src="script.js"></script> <!-- Linking external JavaScript file -->
 </body>
 </html>
